@@ -1,0 +1,35 @@
+<template>
+  <section class="px-10 mt-10">
+
+    <div class="flex items-center">
+      <div class="bg-[#FFD76E] w-12 min-h-[48px] rounded-l-md flex justify-center items-center font-bold">1</div>
+      <h2 class="bg-[#03071E] text-white px-6 py-3 rounded-r-md font-bold w-full">
+        Pilih Via Login
+      </h2>
+    </div>
+
+    <div class="bg-[rgba(0,0,0,0.52)] p-6 rounded-md mt-4 text-white">
+
+      <select
+        v-model="selectedLogin"
+        class="bg-[#FFD76E] text-black font-semibold px-5 py-3 rounded-md shadow w-full cursor-pointer"
+      >
+        <option value="" disabled>Pilih Via Login</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Email">Email</option>
+        <option value="Yostar">Yostar</option>
+      </select>
+
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      selectedLogin: ""
+    }
+  }
+}
+</script>

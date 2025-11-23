@@ -27,7 +27,15 @@
       </li>
       
       <li><a class="hover:text-yellow-300">Cek Pesanan</a></li>
-      <li><a class="hover:text-yellow-300">Ulasan</a></li>
+      <li>
+        <router-link 
+          to="/ulasan" 
+          class="hover:text-yellow-300"
+        >
+          Ulasan
+          </router-link>
+      </li>
+      
         <li>
             <router-link 
             to="/contact" 
