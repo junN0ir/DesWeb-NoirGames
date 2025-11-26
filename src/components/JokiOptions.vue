@@ -1,7 +1,6 @@
 <template>
   <section class="px-10 mt-10">
-    
-    <!-- TITLE HEADER -->
+
     <div class="flex items-center">
       <div class="bg-[#FFD76E] w-12 min-h-[48px] rounded-l-md flex justify-center items-center font-bold">2</div>
       <h2 class="bg-[#03071E] text-white px-6 py-3 rounded-r-md font-bold w-full">
@@ -9,10 +8,8 @@
       </h2>
     </div>
 
-    <!-- MAIN CONTAINER -->
     <div class="bg-[rgba(0,0,0,0.52)] p-6 rounded-md mt-4 text-white">
 
-      <!-- KATEGORI 1: RAWAT AKUN -->
       <h3 class="font-bold mb-2">{{ rawatTitle }}</h3>
       <div class="flex flex-wrap gap-3 mb-6">
         <button
@@ -31,7 +28,6 @@
         </button>
       </div>
 
-      <!-- KATEGORI 2: MAIN STORY -->
       <h3 class="font-bold mb-2">{{ storyTitle }}</h3>
       <div class="flex flex-wrap gap-3 mb-6">
         <button
@@ -50,7 +46,6 @@
         </button>
       </div>
 
-      <!-- DAFTAR ITEM YANG DIPILIH -->
       <div v-if="selectedItems.length > 0" class="mt-6 border-t border-gray-500 pt-4">
         <h3 class="font-bold mb-3 text-lg">Item yang Dipilih:</h3>
         
@@ -58,7 +53,7 @@
           v-for="item in selectedItems" 
           :key="item.label" 
           class="flex items-center justify-between mb-3 bg-[rgba(255,255,255,0.1)] p-4 rounded-lg"
-        >
+          >
           <span class="font-semibold text-base">{{ item.label }}</span>
           
           <div class="flex items-center gap-4">
@@ -125,10 +120,8 @@ export default {
       const index = this.selectedItems.findIndex(i => i.label === item.label)
       
       if (index !== -1) {
-        // Jika sudah ada, hapus dari list
         this.selectedItems.splice(index, 1)
       } else {
-        // Jika belum ada, tambahkan ke list dengan quantity 1
         this.selectedItems.push({
           label: item.label,
           price: item.price,

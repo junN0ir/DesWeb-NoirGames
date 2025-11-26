@@ -4,20 +4,16 @@
     style="background: linear-gradient(180deg,#F88C00 4%,#FAA639 32%,#11E187 100%);"
   >
 
-    <!-- HEADER, BANNER, TITLE -->
     <BannerSection
       title="ARKNIGHTS"
       logo="/src/assets/games/Arknights.png"
       banner="/src/assets/games/BannerArknights.png"
     />
 
-    <!-- DESKRIPSI -->
     <DescriptionSection />
 
-    <!-- VIA LOGIN -->
     <LoginSelect />
 
-    <!-- JENIS JOKI -->
     <JokiOptions
       rawatTitle="Rawat Akun"
       storyTitle="Clear Main Story"
@@ -35,10 +31,8 @@
       ]"
     />
 
-    <!-- METODE PEMBAYARAN -->
     <PaymentButtons />
 
-    <!-- FORM KONTAK -->
     <ContactForm />
 
   </div>

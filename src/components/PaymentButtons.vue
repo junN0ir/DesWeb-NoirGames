@@ -1,7 +1,6 @@
 <template>
   <section class="px-10 mt-10">
 
-    <!-- TITLE -->
     <div class="flex items-center">
       <div class="bg-[#FFD76E] w-12 min-h-[48px] rounded-l-md flex justify-center items-center font-bold">
         3
@@ -11,10 +10,8 @@
       </h2>
     </div>
 
-    <!-- CONTAINER -->
     <div class="bg-[rgba(0,0,0,0.52)] p-6 rounded-md mt-4 text-white">
 
-      <!-- E-WALLET -->
       <h3 class="font-bold mb-2">E-Wallet</h3>
       <div class="flex flex-wrap gap-3 mb-6">
 
@@ -56,7 +53,6 @@
 
       </div>
 
-      <!-- VIRTUAL ACCOUNT -->
       <h3 class="font-bold mb-2">Virtual Account</h3>
       <div class="flex flex-wrap gap-3">
 
@@ -98,7 +94,6 @@
 
       </div>
 
-      <!-- SELECTED PAYMENT INFO -->
       <div v-if="selectedPayment" class="mt-6 pt-4 border-t border-gray-500">
         <p class="text-sm">
           <span class="font-bold">Metode terpilih:</span> 

@@ -4,7 +4,6 @@
     style="background: linear-gradient(180deg, #FFE76A 0%, #B2FF7D 100%);"
   >
 
-    <!-- TITLE -->
     <div class="mb-6">
       <button class="bg-orange-400 px-5 py-2 rounded text-white font-semibold">
         Ulasan
@@ -26,7 +25,6 @@
       <p class="text-gray-700">Dari total 152 ulasan</p>
     </div>
 
-    <!-- REVIEW ITEM 1 -->
     <div class="bg-white p-5 rounded-md shadow mb-8 flex flex-col gap-3">
       <div class="flex items-center gap-4">
         <img src="/src/assets/ulasan/1.png" class="w-12 h-12 rounded-full object-cover" />
@@ -49,7 +47,6 @@
       </p>
     </div>
 
-    <!-- REVIEW ITEM 2 -->
     <div class="bg-white p-5 rounded-md shadow mb-8 flex flex-col gap-3">
       <div class="flex items-center gap-4">
         <img src="/src/assets/ulasan/2.png" class="w-12 h-12 rounded-full object-cover" />
@@ -72,7 +69,6 @@
       </p>
     </div>
 
-    <!-- REVIEW ITEM 3 -->
     <div class="bg-white p-5 rounded-md shadow mb-8 flex flex-col gap-3">
       <div class="flex items-center gap-4">
         <img src="/src/assets/ulasan/3.png" class="w-12 h-12 rounded-full object-cover" />

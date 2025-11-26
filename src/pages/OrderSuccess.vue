@@ -3,7 +3,6 @@
 
     <div class="bg-white w-10/12 md:w-7/12 p-10 rounded-xl shadow-xl text-center">
 
-      <!-- ANIMASI CENTANG -->
       <div class="text-6xl mb-4 animate-pulse">✔️</div>
 
       <h1 class="text-3xl font-bold mb-6">Pemesanan Selesai</h1>
