@@ -1,25 +1,25 @@
 <template>
   <div class="bg-[#03051A] text-white min-h-screen">
 
-<section class="relative h-[40vh] flex items-center px-10 md:px-20 
-                bg-gradient-to-r from-[#03051A] to-[#0a0f3a]">
+    <section class="relative h-[30vh] md:h-[40vh] flex items-center px-6 md:px-20 
+                    bg-gradient-to-r from-[#03051A] to-[#0a0f3a]">
 
-  <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+      <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
-  <div class="relative z-10">
-    <h1 class="text-4xl md:text-5xl font-extrabold">Hubungi Kami</h1>
-    <p class="mt-3 text-lg opacity-90">
-      Kami selalu siap membantu Anda — fast response & profesional.
-    </p>
-  </div>
-</section>
-    <section class="px-10 md:px-20 py-16">
-      <h2 class="text-2xl font-bold mb-6">Informasi Kontak</h2>
+      <div class="relative z-10">
+        <h1 class="text-2xl md:text-5xl font-extrabold">Hubungi Kami</h1>
+        <p class="mt-2 md:mt-3 text-sm md:text-lg opacity-90">
+          Kami selalu siap membantu Anda — fast response & profesional.
+        </p>
+      </div>
+    </section>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <section class="px-6 md:px-20 py-8 md:py-16">
+      <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Informasi Kontak</h2>
 
-        <!-- Kolom Info -->
-        <div class="space-y-4 text-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+
+        <div class="space-y-3 md:space-y-4 text-sm md:text-lg">
           <p><span class="font-semibold text-yellow-300">Alamat:</span><br>
             Jl. Giri Rejo, Balikpapan
           </p>
@@ -34,7 +34,7 @@
 
           <div>
             <span class="font-semibold text-yellow-300">Sosial Media:</span>
-            <div class="flex gap-4 text-2xl mt-2">
+            <div class="flex gap-3 md:gap-4 text-xl md:text-2xl mt-2">
               <i class="fab fa-facebook hover:text-blue-400"></i>
               <i class="fab fa-instagram hover:text-pink-400"></i>
               <i class="fab fa-x-twitter hover:text-gray-300"></i>
@@ -44,9 +44,9 @@
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold mb-4">Lokasi Kami</h2>
+          <h2 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Lokasi Kami</h2>
 
-          <div class="w-full h-80 rounded-xl overflow-hidden shadow-xl border border-white/20">
+          <div class="w-full h-60 md:h-80 rounded-xl overflow-hidden shadow-xl border border-white/20">
             <iframe
               width="100%"
               height="100%"

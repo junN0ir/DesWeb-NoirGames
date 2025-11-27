@@ -38,9 +38,6 @@ const routes = [
     component: Ulasan,
   },
 
-  // =====================
-  //      GAME ROUTES
-  // =====================
   {
     path: "/game/Arknights",
     name: "Arknights",
@@ -62,9 +59,6 @@ const routes = [
     component: Wuwa,
   },
 
-  // =====================
-  // ORDER SUCCESS
-  // =====================
   {
     path: "/order-success",
     name: "OrderSuccess",
