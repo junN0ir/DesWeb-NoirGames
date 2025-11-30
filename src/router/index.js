@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 // Pages
 import Home from "../pages/Home.vue";
 import Game from "../pages/Game.vue";
+import CekPesanan from "../pages/CekPesanan.vue";
 import Contact from "../pages/Contact.vue";
 import OrderSuccess from "../pages/OrderSuccess.vue";
 import Ulasan from "../pages/Ulasan.vue";
@@ -57,6 +58,12 @@ const routes = [
     path: "/game/Wuwa",
     name: "Wuwa",
     component: Wuwa,
+  },
+
+  {
+    path: "/cek-pesanan",
+    name: "CekPesanan",
+    component: CekPesanan,
   },
 
   {
