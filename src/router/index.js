@@ -7,6 +7,8 @@ import CekPesanan from "../pages/CekPesanan.vue";
 import Contact from "../pages/Contact.vue";
 import OrderSuccess from "../pages/OrderSuccess.vue";
 import Ulasan from "../pages/Ulasan.vue";
+import login from "../pages/login.vue";
+import register from "../pages/register.vue";
 
 // Game Pages
 import Arknights from "../pages/Arknights.vue";
@@ -71,6 +73,17 @@ const routes = [
     name: "OrderSuccess",
     component: OrderSuccess,
   },
+
+  {
+    path: "/login",
+    name: "login",
+    component: login,
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: register,
+  }
 ];
 
 const router = createRouter({
