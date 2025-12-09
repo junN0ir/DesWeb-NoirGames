@@ -88,9 +88,12 @@
             <input type="checkbox" class="w-4 h-4 rounded" v-model="rememberMe" />
             <span class="text-gray-700">Ingat Saya</span>
           </label>
-            <a href="#" class="text-orange-600 hover:text-orange-700 font-semibold">
-            Lupa Password?
-            </a>
+        <router-link 
+          to="/forgot-password" 
+          class="text-orange-600 hover:text-orange-700 font-semibold"
+          >
+          Lupa Password?
+        </router-link>
         </div>
 
         <!-- SUBMIT BUTTON -->

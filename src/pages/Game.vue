@@ -1,20 +1,34 @@
 <template>
   <div class="bg-gradient-to-b from-yellow-200 to-green-300 min-h-screen pb-12 md:pb-20">
 
+    <Navbar />
 
-    <div class="flex flex-col md:flex-row p-4 md:p-10 gap-4 md:gap-6">
-      <div class="bg-orange-400 p-6 md:p-10 rounded shadow-2xl md:w-1/2 w-full">
-        <p class="font-semibold bg-white px-3 md:px-4 py-1 md:py-2 inline-block mb-3 md:mb-4 text-xs md:text-sm">Special Offers</p>
-        <h1 class="text-2xl md:text-4xl font-extrabold leading-tight">
-          SUMMER FEST<br>
-          PROMO DISCOUNT JOKI GAME 10%
-        </h1>
-      </div>
-
+    <!-- SUMMER FEST BANNER - FULL WIDTH WITH IMAGE -->
+    <div class="relative w-full h-[200px] md:h-[300px] lg:h-[400px] overflow-hidden">
+      
+      <!-- BACKGROUND IMAGE -->
       <img
         src="/src/assets/home/Summer.png"
-        class="rounded shadow-lg md:w-1/2 w-full object-cover h-48 md:h-auto"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt="Summer Fest"
       />
+
+      <!-- OVERLAY GRADIENT -->
+      <div class="absolute inset-0 bg-gradient-to-r from-orange-400/90 to-transparent"></div>
+
+      <!-- CONTENT -->
+      <div class="relative z-10 h-full flex items-center px-6 md:px-10 lg:px-20">
+        <div class="max-w-xl">
+          <span class="inline-block bg-white px-3 md:px-4 py-1 md:py-2 rounded text-xs md:text-sm font-semibold text-black-600 mb-3 md:mb-4">
+            Special Offers
+          </span>
+          <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white drop-shadow-lg">
+            SUMMER FEST<br>
+            PROMO DISCOUNT JOKI GAME 10%
+          </h1>
+        </div>
+      </div>
+
     </div>
 
     <SearchBar @search="handleSearch" />  
@@ -45,7 +59,7 @@
     </div>
 
     <GameUpcoming />
-
+    <Footer />
   </div>
 </template>
 
@@ -58,11 +72,9 @@ import Footer from '../components/Footer.vue'
 
 export default { 
   components: { 
-    Navbar,
     Category, 
     GameUpcoming, 
-    SearchBar,
-    Footer
+    SearchBar
   },
 
   data() {

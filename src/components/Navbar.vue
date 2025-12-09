@@ -6,10 +6,18 @@
     <!-- Mobile Menu Button -->
     <button 
       @click="toggleMenu"
-      class="md:hidden text-white text-3xl focus:outline-none z-50"
+      class="md:hidden text-white text-3xl focus:outline-none z-50 relative"
     >
       <span v-if="!menuOpen">☰</span>
-      <span v-else>✕</span>
+    </button>
+
+    <!-- Close Button (X) - Fixed Position when Menu Open -->
+    <button 
+      v-if="menuOpen"
+      @click="closeMenu"
+      class="md:hidden fixed top-4 left-4 text-white text-3xl focus:outline-none z-50 bg-[#03051A] w-12 h-12 rounded-lg flex items-center justify-center hover:bg-gray-800 transition"
+    >
+      ✕
     </button>
 
     <!-- Logo -->
@@ -45,11 +53,11 @@
     <!-- Mobile Sidebar -->
     <div 
       :class="[
-        'fixed top-0 left-0 h-full w-72 bg-[#03051A] shadow-2xl transform transition-transform duration-300 ease-in-out z-40',
+        'fixed top-0 left-0 h-full w-72 bg-[#03051A] shadow-2xl transform transition-transform duration-300 ease-in-out z-40 overflow-y-auto',
         menuOpen ? 'translate-x-0' : '-translate-x-full'
       ]"
     >
-      <div class="flex flex-col h-full pt-20 px-6">
+      <div class="flex flex-col h-full pt-20 px-6 pb-6">
 
         <!-- Menu Links -->
         <ul class="flex flex-col gap-6 text-lg font-medium">
@@ -61,7 +69,7 @@
         </ul>
 
         <!-- Bottom Buttons -->
-        <div class="mt-auto mb-8 flex flex-col gap-3">
+        <div class="mt-auto flex flex-col gap-3">
           <router-link to="/register" @click="closeMenu">
             <button class="w-full bg-yellow-300 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
               Daftar
@@ -98,9 +106,18 @@ export default {
   methods: {
     toggleMenu() {
       this.menuOpen = !this.menuOpen
+      
+      // Prevent body scroll when menu is open
+      if (this.menuOpen) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = 'auto'
+      }
     },
+
     closeMenu() {
       this.menuOpen = false
+      document.body.style.overflow = 'auto'
     }
   },
 
@@ -108,6 +125,11 @@ export default {
     $route() {
       this.closeMenu()
     }
+  },
+
+  beforeUnmount() {
+    // Clean up when component is destroyed
+    document.body.style.overflow = 'auto'
   }
 }
 </script>

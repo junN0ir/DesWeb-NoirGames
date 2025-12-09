@@ -9,6 +9,7 @@ import OrderSuccess from "../pages/OrderSuccess.vue";
 import Ulasan from "../pages/Ulasan.vue";
 import login from "../pages/login.vue";
 import register from "../pages/register.vue";
+import ForgotPassword from "../pages/ForgotPassword.vue";
 
 // Game Pages
 import Arknights from "../pages/Arknights.vue";
@@ -83,6 +84,11 @@ const routes = [
     path: "/register",
     name: "register",
     component: register,
+  },
+  {
+    path: "/Forgot-password",
+    name: "ForgotPassword",
+    component: ForgotPassword,
   }
 ];
 

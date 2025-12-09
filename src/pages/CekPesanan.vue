@@ -112,7 +112,7 @@
       <!-- INFO BOX -->
       <div class="mt-6 md:mt-8 bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-lg">
         <div class="flex items-start gap-3">
-          <div class="text-xl md:text-2xl">ℹ️</div>
+          <div class="text-xl md:text-2xl"></div>
           <div>
             <h3 class="font-bold text-blue-900 mb-1 text-sm md:text-base">Informasi Penting</h3>
             <p class="text-blue-800 text-xs md:text-sm leading-relaxed">

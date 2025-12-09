@@ -10,13 +10,18 @@
       <p class="text-lg">Terima kasih telah memesan jasa joki di NoirGames!</p>
 
       <div class="mt-10 text-left space-y-2 text-sm">
-        <p><strong>Game:</strong> {{ $route.query.game }}</p>
-        <p><strong>Jenis Joki:</strong> {{ $route.query.items }}</p>
-        <p><strong>Metode Pembayaran:</strong> {{ $route.query.payment }}</p>
-        <p><strong>No WhatsApp:</strong> {{ $route.query.wa }}</p>
-        <p><strong>Email:</strong> {{ $route.query.email }}</p>
-        <p><strong>Diskon:</strong> {{ $route.query.diskon }}%</p>
+        <p><strong>Game:</strong> </p>
+        <p><strong>Jenis Joki:</strong> </p>
+        <p><strong>Metode Pembayaran:</strong> </p>
+        <p><strong>No WhatsApp:</strong> </p>
+        <p><strong>Email:</strong> </p>
+        <p><strong>Diskon:</strong> %</p>
       </div>
+
+      <p class="mt-8 text-sm text-black">
+      Selanjutnya harap tunggu konfirmasi dari admin melalui WhatsApp terkait
+      </p>
+
 
       <router-link
         to="/"

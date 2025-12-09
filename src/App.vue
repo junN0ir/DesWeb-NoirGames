@@ -15,7 +15,7 @@ export default {
 
   computed: {
     isAuthPage() {
-      return this.$route.path === '/login' || this.$route.path === '/register'
+      return ['/login', '/register', '/forgot-password'].includes(this.$route.path)
     }
   }
 }
