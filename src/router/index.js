@@ -11,11 +11,15 @@ import login from "../pages/login.vue";
 import register from "../pages/register.vue";
 import ForgotPassword from "../pages/ForgotPassword.vue";
 
+
 // Game Pages
 import Arknights from "../pages/Arknights.vue";
 import UmaMusume from "../pages/UmaMusume.vue";
 import P5X from "../pages/P5X.vue";
 import Wuwa from "../pages/Wuwa.vue";
+
+// Test Page
+import Test from "../pages/About.vue";
 
 const routes = [
   {
@@ -89,6 +93,11 @@ const routes = [
     path: "/Forgot-password",
     name: "ForgotPassword",
     component: ForgotPassword,
+  },
+  {
+    path: "/about",
+    name: "about",
+    component: Test,
   }
 ];
 

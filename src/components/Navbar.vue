@@ -33,6 +33,7 @@
       <li><router-link to="/cek-pesanan" class="hover:text-yellow-300 transition">Cek Pesanan</router-link></li>
       <li><router-link to="/ulasan" class="hover:text-yellow-300 transition">Ulasan</router-link></li>
       <li><router-link to="/contact" class="hover:text-yellow-300 transition">Kontak</router-link></li>
+      <li><router-link to="/about" class="hover:text-yellow-300 transition">Tentang</router-link></li>
     </ul>
 
     <!-- Desktop Buttons -->

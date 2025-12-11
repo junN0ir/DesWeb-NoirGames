@@ -42,6 +42,12 @@
         Kontak
         </router-link>
     </li>
+
+    <li>    
+        <router-link to="/about" class="hover:text-yellow-300 transition">   
+        About
+        </router-link>
+    </li>
     </ul>
     </div>
 
@@ -52,16 +58,7 @@
         juniormarcellino20@gmail.com
         </p>
 
-    <div class="mt-4 w-full h-40 rounded-lg overflow-hidden border border-white/20">
-        <iframe
-          width="100%"
-          height="100%"
-          style="border:0;"
-          loading="lazy"
-          allowfullscreen
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d225.61560023591434!2d116.88238789653107!3d-1.1507312103468308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1763067361969!5m2!1sid!2sid">
-        </iframe>
-      </div>
+
     </div>
 
     <div class="mt-10 border-t border-white/20 pt-5 text-left text-xs opacity-70">
